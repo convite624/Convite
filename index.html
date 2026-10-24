@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convite de Verão ☀️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Sans', sans-serif;
+  background: linear-gradient(145deg, #00c9d8, #7be8d2, #ffe49a);
+  color: #064c60;
+}
+
+.card {
+  width: 100%;
+  max-width: 440px;
+  background: #fffef7;
+  border-radius: 30px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 20px 55px #075c6440;
+}
+
+.hero {
+  padding: 35px 20px;
+  background: linear-gradient(160deg, #00bfd0, #51ded0);
+  position: relative;
+}
+
+.sun {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 45px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: white;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: white;
+  margin: 15px 0;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.decor {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.content {
+  padding: 25px 22px 30px;
+}
+
+.welcome {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.date-box {
+  padding: 20px 12px;
+  background: #fff4c9;
+  border: 2px dashed #f1b83d;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.day {
+  color: #e88b20;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.month {
+  font-size: 19px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.time {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 15px;
+  background: white;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.location {
+  text-align: left;
+  display: flex;
+  gap: 13px;
+  padding: 17px;
+  border-radius: 17px;
+  background: #e7faf5;
+  margin-bottom: 24px;
+}
+
+.location-icon {
+  font-size: 27px;
+}
+
+.location strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.location p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #337080;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.hint {
+  font-size: 13px;
+  color: #64838a;
+  margin-bottom: 17px;
+  line-height: 1.6;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border: 1.5px solid #b9e8df;
+  border-radius: 13px;
+  font: inherit;
+  font-size: 15px;
+  outline: none;
+  margin-bottom: 12px;
+}
+
+input:focus {
+  border-color: #00b9c8;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 14px;
+  padding: 15px;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.yes {
+  background: #08a987;
+  color: white;
+  margin-bottom: 13px;
+  box-shadow: 0 5px 0 #07856d;
+}
+
+.no {
+  background: white;
+  border: 1.5px solid #d7e9e4;
+  color: #49717a;
+}
+
+#result {
+  display: none;
+  margin-top: 17px;
+  padding: 15px;
+  border-radius: 14px;
+  background: #e7faf5;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer {
+  padding: 18px;
+  background: #07576a;
+  color: #d8fff5;
+  font-size: 12px;
+  line-height: 1.7;
+}
+</style>
+</head>
+
+<body>
+
+<main class="card">
+
+<header class="hero">
+  <span class="sun">☀️</span>
+  <p class="eyebrow">VOCÊ ESTÁ CONVIDADO!</p>
+
+  <h1>Vem curtir<br>com a gente!</h1>
+
+  <p class="subtitle">
+    Sol, alegria e momentos especiais 🌴
+  </p>
+
+  <div class="decor">🌺 🥥 🌊</div>
+</header>
+
+<section class="content">
+
+  <p class="welcome">
+    Prepare-se para um dia cheio de diversão,
+    boas energias e clima de verão!
+    <br>
+    <strong>
+      Sua presença vai deixar tudo ainda melhor!
+    </strong>
+  </p>
+
+  <div class="date-box">
+    <p class="day">22</p>
+    <p class="month">Novembro</p>
+
+    <span class="time">
+      🕚 A partir das 11 horas
+    </span>
+  </div>
+
+  <div class="location">
+    <span class="location-icon">📍</span>
+
+    <div>
+      <strong>Onde vai ser?</strong>
+      <p>
+        Espaço Kimura<br>
+        RLS, Quadra 05, Lote 06
+      </p>
+    </div>
+  </div>
+
+  <h2 class="section-title">
+    Você vai? 💛
+  </h2>
+
+  <p class="hint">
+    Digite seu nome e o nome de quem vai com você.
+  </p>
+
+  <form id="rsvp">
+
+    <input
+      type="text"
+      id="nome"
+      placeholder="Seu nome completo"
+      maxlength="80"
+      required
+    >
+
+    <input
+      type="text"
+      id="acompanhante"
+      placeholder="Ex.: João (acompanhante)"
+      maxlength="80"
+    >
+
+    <button class="btn yes" type="submit">
+      ☀️ Sim, eu vou!
+    </button>
+
+    <button class="btn no" type="button" id="nao">
+      Não poderei ir
+    </button>
+
+  </form>
+
+  <div id="result" role="status"></div>
+
+</section>
+
+<footer>
+  🌞 🌴 🌊
+  <br>
+  Um dia especial, boas companhias e muita alegria!
+  <br>
+  Esperamos você!
+</footer>
+
+</main>
+
+<script>
+const form = document.getElementById('rsvp');
+const nome = document.getElementById('nome');
+const acompanhante = document.getElementById('acompanhante');
+const result = document.getElementById('result');
+
+function mostrarResposta(mensagem) {
+  result.textContent = mensagem;
+  result.style.display = 'block';
+
+  result.scrollIntoView({
+    behavior: 'smooth',
+    block: 'nearest'
+  });
+}
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const pessoa = nome.value.trim();
+  const companhia = acompanhante.value.trim();
+
+  if (!pessoa) {
+    nome.focus();
+    return;
+  }
+
+  let mensagem =
+    '🎉 ' + pessoa + ' confirmou presença!';
+
+  if (companhia) {
+    mensagem += ' Vai com mais ' + companhia + '!';
+  }
+
+  mostrarResposta(mensagem);
+});
+
+document.getElementById('nao').addEventListener('click', function() {
+  const pessoa = nome.value.trim();
+
+  if (!pessoa) {
+    nome.focus();
+    return;
+  }
+
+  mostrarResposta(
+    'Tudo bem, ' + pessoa +
+    '! Obrigado por responder. 💛'
+  );
+});
+</script>
+
+</body>
+</html>
